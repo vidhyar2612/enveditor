@@ -6,7 +6,7 @@
  * @package  environment-editor
  */
 
-namespace Laravelcustom\Enveditor;
+namespace Vidhyar2612\Enveditor;
 
 class EnveditorStore
 {

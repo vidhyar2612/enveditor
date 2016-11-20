@@ -6,12 +6,12 @@
  * @package  lc-enveditor
  */
 
-namespace Laravelcustom\Enveditor;
+namespace Vidhyar2612\Enveditor;
 
 class Facade extends \Illuminate\Support\Facades\Facade
 {
 	protected static function getFacadeAccessor()
 	{
-		return 'Laravelcustom\Enveditor\EnveditorStore';
+		return 'Vidhyar2612\Enveditor\EnveditorStore';
 	}
 }

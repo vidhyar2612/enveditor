@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravelcustom\Enveditor;
+namespace Vidhyar2612\Enveditor;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -14,7 +14,7 @@ class EnveditorServiceProvider extends ServiceProvider
     public function boot()
     {
         // Provide a shortcut to the EnveditorStore for injecting into classes.
-        $this->app->bind('Laravelcustom\Enveditor\EnveditorStore');
+        $this->app->bind('Vidhyar2612\Enveditor\EnveditorStore');
     }
 
     /**

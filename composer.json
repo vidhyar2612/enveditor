@@ -1,5 +1,5 @@
 {
-    "name": "laravelcustom/enveditor",
+    "name": "vidhyar2612/enveditor",
     "description": "To edit the environment variable",
     "authors": [
         {
@@ -9,7 +9,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Laravelcustom\\Enveditor\\": "src/"
+            "Vidhyar2612\\Enveditor\\": "src/"
         }
     },
     "minimum-stability": "dev",
