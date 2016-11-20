@@ -1,0 +1,17 @@
+{
+    "name": "laravelcustom/enveditor",
+    "description": "To edit the environment variable",
+    "authors": [
+        {
+            "name": "Vidhya",
+            "email": "vidhyar2612@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Laravelcustom\\Enveditor\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
