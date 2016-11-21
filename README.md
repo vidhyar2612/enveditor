@@ -11,7 +11,9 @@ You can either access the Enveditor store via its facade or inject it by type-hi
 
 ```php
 <?php
-Enveditor::set('ENV_KEY', 'ENV_VALUE');
-Enveditor::get('ENV_KEY');
+
+	Enveditor::set('ENV_KEY', 'ENV_VALUE');
+
+	Enveditor::get('ENV_KEY');
 ?>
 ```
