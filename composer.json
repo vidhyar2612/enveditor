@@ -13,6 +13,6 @@
             "vidhyar2612\\Enveditor\\": "src/"
         }
     },
-    "minimum-stability": "dev-master",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }
