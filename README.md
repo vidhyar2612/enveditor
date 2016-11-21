@@ -4,7 +4,7 @@
 
 1. Run 'composer require vidhyar2612/enveditor'
 
-2. Add `vidhyar2612\Enveditor\ServiceProvider` to the array of providers in `config/app.php`.
+2. Add `vidhyar2612\Enveditor\EnveditorServiceProvider::class` to the array of providers in `config/app.php`.
 
 3. Add `'Enveditor' => 'vidhyar2612\Enveditor\Facade'` to the array of aliases in `config/app.php`.
   
