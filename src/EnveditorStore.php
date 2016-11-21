@@ -6,7 +6,7 @@
  * @package  environment-editor
  */
 
-namespace Vidhyar2612\Enveditor;
+namespace vidhyar2612\Enveditor;
 
 class EnveditorStore
 {

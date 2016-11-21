@@ -1,6 +1,7 @@
 {
     "name": "vidhyar2612/enveditor",
-    "description": "To edit the environment variable",
+    "description": "Laravel 5.2 - Env Editor",
+    "keywords": ["Laravel 5 env" , "Env Edit" , "Laravel 5 Env Set Value"],
     "authors": [
         {
             "name": "Vidhya",
@@ -9,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Vidhyar2612\\Enveditor\\": "src/"
+            "vidhyar2612\\Enveditor\\": "src/"
         }
     },
     "minimum-stability": "dev",

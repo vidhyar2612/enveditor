@@ -6,12 +6,12 @@
  * @package  lc-enveditor
  */
 
-namespace Vidhyar2612\Enveditor;
+namespace vidhyar2612\Enveditor;
 
 class Facade extends \Illuminate\Support\Facades\Facade
 {
 	protected static function getFacadeAccessor()
 	{
-		return 'Vidhyar2612\Enveditor\EnveditorStore';
+		return 'vidhyar2612\Enveditor\EnveditorStore';
 	}
 }
