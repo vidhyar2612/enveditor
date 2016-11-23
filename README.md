@@ -1,4 +1,4 @@
-# Laravel - ENV Editor
+# Laravel 5.2 - ENV Editor
 
 ## Installation
 
