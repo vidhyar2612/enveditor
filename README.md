@@ -1,5 +1,10 @@
 # Laravel 5.X - ENV Editor
 
+[![Build Status](https://travis-ci.org/vidhyar2612/enveditor.svg?branch=master)](https://travis-ci.org/vidhyar2612/enveditor)
+[![Latest Stable Version](https://poser.pugx.org/vidhyar2612/enveditor/v/stable)](https://packagist.org/packages/vidhyar2612/enveditor)
+[![Total Downloads](https://poser.pugx.org/vidhyar2612/enveditor/downloads)](https://packagist.org/packages/vidhyar2612/enveditor)
+[![License](https://poser.pugx.org/vidhyar2612/enveditor/license)](https://packagist.org/packages/vidhyar2612/enveditor)
+
 ## Installation
 
 1. Run 'composer require vidhyar2612/enveditor'
