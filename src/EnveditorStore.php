@@ -51,8 +51,8 @@ class EnveditorStore
 		$this->path = $this->path();
 
 		return file_exists($this->path);
-	}
-
+	
+	}	
 
 	/**
 	 * Check the environment file exists
@@ -61,8 +61,21 @@ class EnveditorStore
 	 */
 
 	public function path() {
-
 		return base_path().'/.env';
+	}
+
+	/**
+	 * Get all the env values as an array
+	 * 
+	 * @return array 
+	 */
+
+	public function all() {
+
+		if($this->check_path()) {
+			return CoreManager::all($this->path);	
+		}
+		return array();
 	}
 
 
@@ -77,28 +90,68 @@ class EnveditorStore
 	public function get($key) {
 
 		return env($key);
+	
+	}
+
+	/** 
+	 * Check the key exists
+	 * 
+	 * @param string $key 
+	 * @param string $value
+	 * 
+	 * @return boolean 
+	 */
+
+	public function has($key , $value=null) {
+		return CoreManager::has($this->path,$key,$value);
 	}
 
 	/**
-	 * Set a specific key to a value in the settings data.
+	 * Create a key with an value
 	 *
-	 * @param string|array $key   Key string or associative array of key => value
-	 * @param mixed        $value Optional only if the first argument is an array
+	 * @param string $key
+	 * @param string $value
+	 * 
+	 * @return boolean
+	 */
+
+	public function create($key , $value=null) {
+
+		if($this->check_path()) {
+			return CoreManager::create($this->path,$key,$value);	
+		}
+
+		return false;
+		
+	}
+
+	/**
+	 * Set a specific key to a value in the env file.
+	 *
+	 * @param string $key   Key string
+	 * @param string        $value 
 	 */
 	public function set($key, $value = null)
 	{
 		if($this->check_path()) {
-
-    		$current_key_value = $key.'='.env($key);
-
-    		$new_key_value = $key.'='.$value;
-    	
-    		$result = file_put_contents($this->path, str_replace($current_key_value,$new_key_value,file_get_contents($this->path)));
-
-    		return true;
+			return CoreManager::set($this->path,$key,$value);	
 		}
 
 		return false;
+	}
+
+	/**
+	 * Delete the key and value
+	 *
+	 * @param string $key   Key string
+	 *
+	 * @return boolean
+	 */
+
+	public function delete($key) {
+		if($this->check_path()) {
+			return CoreManager::delete($this->path,$key);
+		}
 	}
 
 }
