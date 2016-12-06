@@ -10,7 +10,7 @@
 The Enveditor Service Provider can be installed via Composer
 
 	"require": {
-	  "vidhyar2612/enveditor": "dev-master"
+	  "vidhyar2612/enveditor": "^1.0"
 	}
 
 
