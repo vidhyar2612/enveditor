@@ -49,3 +49,15 @@ You can either access the Enveditor store via its facade or inject it by type-hi
 	Enveditor::get('ENV_KEY');
 ?>
 ```
+## Package features:
+   
+   * List of all keys and values
+   
+   * Create a new key with value
+   
+   * Edit value of the key
+   
+   * Get the value of the key
+   
+   * Delete key 
+   
