@@ -49,3 +49,36 @@ You can either access the Enveditor store via its facade or inject it by type-hi
 	Enveditor::get('ENV_KEY');
 ?>
 ```
+## Package Features
+   
+   * List of all keys and values
+   
+   * Create a new key with value
+   
+   * Edit value of the key
+   
+   * Get the value of the key
+   
+   * Delete key 
+   
+## Examples
+
+  	Enveditor::all();
+
+	Enveditor::create('EXAMPLE_KEY' , '123456');
+
+	Enveditor::set('EXAMPLE_KEY' , '123');
+
+	Enveditor::get('EXAMPLE_KEY');
+
+	Enveditor::delete('EXAMPLE_KEY');
+	
+## Contact
+
+Open an issue on GitHub if you have any problems or suggestions.
+
+
+## License
+
+The contents of this repository is released under the [MIT license](http://opensource.org/licenses/MIT).
+   
