@@ -89,7 +89,7 @@ class EnveditorStore
 	 */
 	public function get($key) {
 
-		return env($key);
+		return CoreManager::get($this->path,$key);
 	
 	}
 

@@ -18,9 +18,6 @@ use Artisan;
  */
 class CoreManager
 {
-	
-
-
 	/**
 	 * Get all the env values as an array
 	 * 
@@ -30,6 +27,8 @@ class CoreManager
 	public static function all($path) {
 
 		$data =  array();
+
+		Artisan::call('config:cache');
 
 		if(file_exists($path)) {
 
@@ -68,6 +67,8 @@ class CoreManager
 	public static function get($key) {
 
 		$result = "";
+
+		Artisan::call('config:cache');
 
 		if($key) {
 			$result = env($key);	
@@ -176,6 +177,7 @@ class CoreManager
 	public static function delete($path,$key) {
 
 		if($key) {
+			Artisan::call('config:cache');
 			$delete_value = $key."=".env($key);
 			file_put_contents($path, str_replace($delete_value, "", file_get_contents($path)));	
 			Artisan::call('config:cache');
