@@ -49,7 +49,7 @@ You can either access the Enveditor store via its facade or inject it by type-hi
 	Enveditor::get('ENV_KEY');
 ?>
 ```
-## Package features:
+## Package Features
    
    * List of all keys and values
    
@@ -72,4 +72,13 @@ You can either access the Enveditor store via its facade or inject it by type-hi
 	Enveditor::get('EXAMPLE_KEY');
 
 	Enveditor::delete('EXAMPLE_KEY');
+	
+## Contact
+
+Open an issue on GitHub if you have any problems or suggestions.
+
+
+## License
+
+The contents of this repository is released under the [MIT license](http://opensource.org/licenses/MIT).
    
