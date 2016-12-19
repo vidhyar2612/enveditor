@@ -61,3 +61,15 @@ You can either access the Enveditor store via its facade or inject it by type-hi
    
    * Delete key 
    
+## Examples
+
+  	Enveditor::all();
+
+	Enveditor::create('EXAMPLE_KEY' , '123456');
+
+	Enveditor::set('EXAMPLE_KEY' , '123');
+
+	Enveditor::get('EXAMPLE_KEY');
+
+	Enveditor::delete('EXAMPLE_KEY');
+   
