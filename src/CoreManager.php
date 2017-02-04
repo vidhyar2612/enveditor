@@ -121,7 +121,7 @@ class CoreManager
 	 * @return boolean
 	 */
 
-	public static function create($path,$key , $value=null) {
+	public static function create($path,$key , $value="") {
 
 		$data = CoreManager::all($path);
 
