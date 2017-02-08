@@ -28,7 +28,7 @@ class CoreManager
 
 		$data =  array();
 
-		Artisan::call('config:cache');
+		// Artisan::call('config:cache');
 
 		if(file_exists($path)) {
 
