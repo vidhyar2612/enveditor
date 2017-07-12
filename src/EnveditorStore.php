@@ -97,13 +97,13 @@ class EnveditorStore
 	 * Check the key exists
 	 * 
 	 * @param string $key 
-	 * @param string $value
 	 * 
 	 * @return boolean 
 	 */
 
-	public function has($key , $value=null) {
-		return CoreManager::has($this->path,$key,$value);
+	public function has($key)
+	{
+	return CoreManager::has(CoreManager::all($this->path), $key);
 	}
 
 	/**
