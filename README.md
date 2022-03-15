@@ -1,4 +1,4 @@
-# Laravel 5.X - ENV Editor
+# Laravel 5.X to 8.X - ENV Editor
 
 [![Build Status](https://travis-ci.org/vidhyar2612/enveditor.svg?branch=master)](https://travis-ci.org/vidhyar2612/enveditor)
 [![Latest Stable Version](https://poser.pugx.org/vidhyar2612/enveditor/v/stable)](https://packagist.org/packages/vidhyar2612/enveditor)
